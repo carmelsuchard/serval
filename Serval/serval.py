@@ -310,7 +310,7 @@ class Serval(object):
             checkable=True, )
         
         self.freehand_select_btn = self.add_action(
-            'select_polygon.svg',
+            'select_freehand.svg',
             text="Select Raster Cells by Freehand",
             callback=self.activate_freehand_selection,
             add_to_toolbar=self.sel_toolbar,
