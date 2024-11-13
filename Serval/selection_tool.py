@@ -155,6 +155,7 @@ class RasterCellSelectionMapTool(QgsMapTool):
         if e.key() == Qt.Key_Escape:
             self.uc.bar_info("Tool aborted")
             self.selecting_finished()
+            self.is_drawing = False
         elif e.key() == Qt.Key_Backspace:
             if self.current_points:
                 self.current_points.pop()
